@@ -1,9 +1,10 @@
 # Your Project's Title...
-Your project's description...
+weekend site developed using Edge delivery services(EDS)
 
 ## Environments
-- Preview: https://main--{repo}--{owner}.hlx.page/
-- Live: https://main--{repo}--{owner}.hlx.live/
+- Preview:https://main--wknd-franklin--sindhusahithi26.hlx.page/
+- Live: https://main--wknd-franklin--sindhusahithi26.hlx.live/
+- 
 
 ## Installation
 
