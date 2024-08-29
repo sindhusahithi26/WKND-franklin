@@ -1,0 +1,80 @@
+
+.section.locked-pics-container > .locked-pics-wrapper > .locked-pics.block {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    position: relative;
+  }
+
+  .locked-pics > div {
+    display: flex;
+    flex-direction: column-reverse; 
+    align-items: left;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+ 
+  .locked-pics > div > div:last-child {
+    flex: 1;
+    padding: 15px 10px;
+    position: relative;
+    background: white; 
+    z-index: 2;
+    color: rgb(125, 113, 113); 
+
+    >.button-container .button{
+        background-color:  rgb(212, 206, 206);
+        color:grey;
+    }
+  }
+  
+
+  .locked-pics picture {
+    flex: 1;
+    display: block;
+    max-width: 100%;
+    position: relative;
+    color: rgb(82, 81, 81); 
+    z-index: 2;
+  }
+  
+  .locked-pics img {
+    width: 100%;
+    height: auto;
+    opacity: 0.6; 
+  }
+  
+ 
+  .locked-pics > div::after {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(140deg, yellow 45%, transparent 50%); 
+    padding: 24px; 
+    font-size: 24px;
+    color: black;
+    z-index: 3;
+    transform: translateX(10px); 
+}
+
+ 
+  .locked-pics h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .locked-pics p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .locked-pics > div {
+      flex-direction: column-reverse;
+    }
+  }

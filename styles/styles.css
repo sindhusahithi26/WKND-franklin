@@ -255,3 +255,107 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
+main{
+  padding-top: 200px;
+}
+
+main > .section.magazine-image{
+ margin:-30px -10px;
+}
+
+main > .section.magazine-text >.default-content-wrapper{
+ 
+
+  > h2{
+    font-family:'Times New Roman', Times, serif;
+    font-size:large;
+    font-weight: 550;
+    margin-left:5px;
+   
+  }
+  >p{
+    margin-left: 5px;
+    font-size: small;
+    font-weight: 100;
+    line-height:40px;
+  }
+  >p:nth-child(4){
+    text-align:left;
+    padding: 0 60px;
+    font-size: medium;
+    line-height: 25px;
+
+  }
+  >#clear-skies,#mythical-northern-lights,#the-front{
+    position: relative;
+    display: inline-block;
+    padding-bottom: 20px; 
+  }
+  >#clear-skies:after,#mythical-northern-lights:after,#the-front:after{
+    content: '';
+    position: absolute;
+    left: 25%; 
+    transform: translateX(-50%); 
+    bottom: 0;
+    width: 50%;
+    height: 2px;
+    background-color: rgb(220, 220, 9);
+  }
+
+}
+
+@media (width>1024px){
+  main:has(.section.magazine-image) {
+    display:flex;
+    flex-wrap:wrap
+  }
+  
+  
+  main > .section.magazine-text >.default-content-wrapper{
+    margin-left: -250px;
+    margin-top: 80px;
+    max-width: 100%;
+ 
+
+    > h2{
+      font-family:'Times New Roman', Times, serif;
+      font-size:xx-large;
+      font-weight: 550;
+      margin-left:5px;
+     
+    }
+
+    > p{
+      font-size: medium;
+      text-align: justify;
+    }
+  }
+  .section.magazine-image {
+    flex:0 0 100%;
+  }
+  .section.magazine-text{
+    flex: 0 0 66%;
+    padding-right:60px;
+    margin-left: -50px;
+  }
+ 
+
+  .section.magazine-list.article-list-container {
+    position: absolute;
+    right: 0; 
+    top: 1000px; 
+    width: 20%;
+    max-width: 20%; 
+    height: 100vh; 
+    
+    margin: 0; 
+   
+    background-color: #fff;
+}
+
+
+}
+
+
+     
