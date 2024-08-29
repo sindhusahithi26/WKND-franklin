@@ -2,24 +2,26 @@ indices:
   WKND-franklin:
     include:
       - /magazine/**
-    exclude:
-      -
     target: /query-index.json
-           
+
     properties:
       title:
-        select: head > meta[property='og:title']
-        value: |
-          match(el, 'content')
+        selectFirst: true
+        values:
+          - select: "head > meta[property='og:title']"
+            attribute: "content"
       path:
-        select: head > meta[property='og:url']
-        value: |
-        match(el,'content')
+        selectFirst: true
+        values:
+          - select: "head > meta[property='og:url']"
+            attribute: "content"
       image:
-        select: head > meta[property='og:image']
-        value: |
-        match(el,'content')
+        selectFirst: true
+        values:
+          - select: "head > meta[property='og:image']"
+            attribute: "content"
       description:
-        select: head > meta[name='description']
-        value: |
-        match(el,'content')
+        selectFirst: true
+        values:
+          - select: "head > meta[name='description']"
+            attribute: "content"
